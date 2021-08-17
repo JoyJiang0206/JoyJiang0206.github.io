@@ -1,0 +1,52 @@
+#mapid {
+    width: 66%;
+    float: left;
+}
+
+#choice {
+    width: 10%;
+    float: left;
+}
+
+@media handheld, only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+    #mapid, #choice {
+     width: 50%;
+     float: left;
+    }
+}
+
+#example_video_1{
+  max-width: 100%;
+  height: auto;
+}
+
+#example_video_2{
+  max-width: 100%;
+  height: auto;
+}
+
+#example_video_3{
+  max-width: 100%;
+  height: auto;
+}
+
+#container1{
+            display: box;
+            display: -webkit-box;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            display: flex;
+            display: -webkit-flex;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+#container2{
+  padding: 0px 20px 0px 20px;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+}

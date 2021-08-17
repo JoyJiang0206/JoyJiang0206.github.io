@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MZHQG9E8V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8MZHQG9E8V');
+</script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>城市-旅图：一目了然的旅游地图</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo 2.png" rel="icon">
+  <link href="assets/img/logo 2.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <link href="http://vjs.zencdn.net/5.0.2/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+  <script src="http://vjs.zencdn.net/5.0.2/video.js"></script>
+  	<link href="style.css" rel="stylesheet">
+	<link href="map.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	  <script src="renwen.js"></script>
+    <script src="ziran.js"></script>
+    <script src="gaoxiao.js"></script>
+    <script src="bowu.js"></script>
+    <script src="dongzhi.js"></script>
+    <script src="youle.js"></script>
+    <script src="shang.js"></script>
+    <script src="wanghong.js"></script>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizPage - v3.2.1
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-11 d-flex align-items-center">
+          <a class="logo mr-auto" href="https://joyjiang0206.github.io/TravelMap/index.html"><img src="assets/img/logo.png" height="40"alt="" ></a>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li><a href="https://joyjiang0206.github.io/TravelMap/index.html">主页</a></li>
+              <li class="active"><a href="https://joyjiang0206.github.io/TravelMap/city-map.html">城市</a></li>
+              <li><a href="https://joyjiang0206.github.io/TravelMap/travel/shequ.html">社区</a></li>
+              <li><a href="https://joyjiang0206.github.io/TravelMap/p/personal.html">个人</a></li>
+              <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" color="white">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg></li>
+              <li><img src="assets/img/tx2.png" alt="" height="40"></li>
+            </ul>
+          </nav><!-- .nav-menu -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= 城市地图 ======= -->
+    <section class="breadcrumbs animate__animated animate__fadeInDown" style="margin-bottom:10px;">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+        <h2>城市旅行地图</h2>
+        <ol>
+          <div class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="tooltip" data-placement="top" title="更多敬请期待">
+            北京（切换城市）
+            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+           </a>
+         </div>
+        </ol>
+      </div>
+      </div>
+
+    </section><!-- End Breadcrumbs Section -->
+
+
+    <section class="inner-page mt-4 animate__animated animate__fadeInUp">
+      <div id="container1" style="margin-bottom:10px;">
+        <div id="choice" class="btn-group-vertical">
+          <button type="button" class="btn btn-outline-success" onclick="renwen();"><a id="ren" href="#">人文景观</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="ziran();"><a id="zi" href="#">自然景观</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="gaoxiao();"><a id="gao" href="#">高校</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="bowu();"><a id="bo" href="#">博物展览</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="dongzhi();"><a id="dz" href="#">动植物园</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="youle();"><a id="you" href="#">游乐园</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="shang();"><a id="sh" href="#">商圈</a></button>
+          <button type="button" class="btn btn-outline-success" onclick="wanghong();"><a id="wh" href="#">网红打卡地</a></button>
+      </div>
+      <div id="mapid" style="height: 500px"></div>
+      </div>
+    </section>
+
+
+    <!-- ======= 城市视频 ======= -->
+    <div>
+      <section id="portfolio" class="section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <header class="section-header" style="margin-top:20px; margin-bottom:20px;">
+            <h3>关于城市</h3>
+          </header>
+
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <video id="example_video_1" class="video-js vjs-default-skin" controls="controls" preload="none"  poster="assets/img/bj1.png" data-setup="{}">
+            <source src="assets/img/bj1.mp4" type="video/mp4">
+          </video>
+          </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <video id="example_video_2" class="video-js vjs-default-skin" controls="controls" preload="none"  poster="assets/img/bj2.png" data-setup="{}">
+            <source src="assets/img/bj2.mp4" type="video/mp4">
+          </video>
+                 </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <video id="example_video_3" class="video-js vjs-default-skin" controls="controls" preload="none"  poster="assets/img/bj3.png" data-setup="{}">
+            <source src="assets/img/bj3.mp4" type="video/mp4">
+          </video>
+                 </figure>
+                </div>
+              </div>
+
+            </div>
+
+            </div>
+          </section><!-- End Portfolio Section -->
+
+
+
+
+            <!-- ======= 景点一览 ======= -->
+        <div>
+          <section id="about">
+            <div class="container" data-aos="fade-up" style="margin-bottom:10px">
+
+              <header class="section-header">
+                <h3>景点一览</h3>
+              </header>
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrDcXZIT79t4bECb?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="666" style="background: transparent; border: 1px solid #ccc; margin-top:10px;"></iframe>
+        </div>
+        </div>
+
+    <!-- ======= 热门 ======= -->
+            <div>
+              <section id="about">
+                <div class="container" data-aos="fade-up" style="margin-bottom:10px">
+
+                  <header class="section-header">
+                    <h3>热门景点及信息</h3>
+                  </header>
+
+                  <div class="card mb-3">
+                <div class="row no-gutters">
+                <div class="col-md-4">
+                <img src="assets/img/1.png" alt="..." style="width: 100%;">
+                </div>
+                <div class="col-md-8">
+                  <div id="container2">
+                <div class="card-body">
+                  <h4 class="card-title" style="color:black;"><strong><br><br><br><br>故宫</strong></h4>
+                <p class="card-text"><small class="text-muted">
+                  金碧辉煌，雄伟壮观，器宇轩昂，肃穆庄严。绝大多数刚来北京的游客，都会把故宫当作必去之处。<br>
+                  故宫又称紫禁城，是明、清两代的皇宫，也是古老中国的标志和象征。当你置身于气派规整的高墙深院，能真切地感受到它曾经的荣耀。<br>
+                  悠久的历史给这里留下了大规模的珍贵建筑和无数文物，也成为今天游玩故宫的主要看点。
+                    </p>
+                <p class="card-text"><div style="color:#18d26e;">地址:</div>北京市东城区景山前街4号<br>
+                    <div style="color:#18d26e;">开放时间：</div>
+                    旺季：4.1-10.31：08:20-17:00(停止售票16:00,最晚入园16:10)<br>
+                    淡季：11.1-3.31：08:30-16:30(停止售票15:30,最晚入园15:40)<br>
+                    除法定节假日外每周一闭馆<br>
+                    <div style="color:#18d26e;">建议游览时间:</div>4-5小时
+                    <div style="color:#18d26e;">门票:</div>
+                    旺季：大门票：60元/人<br>
+                    淡季：大门票：40元/人<br>
+                    珍宝馆（即进入宁寿宫区，还包括戏曲馆、石鼓馆）参观门票：10元/人<br>
+                    钟表馆（即进入奉先殿区）参观门票：10元/人<br>
+                    <div style="color:#18d26e;">优惠政策>><u>点击详情</u></div>
+                  <div style="color:#18d26e;">周边游览:</div>
+                    周边景点：游览结束，从神武门出来后，对面即是景山公园。即可步行游览景山公园，或向西600米抵达北海公园。
+                </p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="assets/img/2.png" alt="..." style="width: 100%">
+                      </div>
+                      <div class="col-md-8">
+                        <div id="container2">
+                        <div class="card-body">
+                  <h4 class="card-title" style="color:black;"><strong><br><br><br><br>颐和园</strong></h4>
+                          <p class="card-text">春湖落日水拖蓝，天影楼台上下涵。十里青山行画里，双飞百鸟似江南。<br>
+                        颐和园原是清朝帝王的行宫和花园，又称清漪园，以昆明湖、万寿山为基址，<br>
+                        按照江南园林的设计手法建造，是我国现存规模非常大，保存非常完整的皇家园林。<br>
+                        景色极具优雅，还有很多珍贵的文物，被誉为“皇家园林博物馆”。
+                            <div style="color:#18d26e;">地址:</div>
+                            北京市海淀区新建宫门路19号<br>
+                    <div style="color:#18d26e;">开放时间：</div>
+                    旺季：（4月1日-10月31日）：6:00开园，19:00停止入园，20:00闭园。<br>
+                    淡季：（11月1日-3月31日）：6:30开园，18:00停止入园，19:00闭园。<br>
+                    <div style="color:#18d26e;">建议游览时间:</div>4-5小时
+                    <div style="color:#18d26e;">门票:</div>
+                      旺季：30元/张<br>
+                      淡季：20元/张<br>
+                    <div style="color:#18d26e;">优惠政策>><u>点击详情</u></div>
+                    <div style="color:#18d26e;">周边游览:</div>
+                      周边景点：在参观颐和园的当天，可以选择一同参观同样非常著名的景点————圆明园。
+                    </p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card mb-3">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="assets/img/3.png" alt="..." style="width: 100%">
+                      </div>
+                      <div class="col-md-8">
+                        <div id="container2">
+
+                        <div class="card-body">
+                        <h4 class="card-title" style="color:black;"><strong><br><br><br><br>首钢工业遗址公园</strong></h4>
+                          <p class="card-text">
+                            首钢工业遗址公园位于石景山的永定河第一大湖——莲石湖，石景山区按照永定河的自然流向，<br>
+                            由北至南分为三段区域，建设3个主题公园，其中中段区域即首钢地区，建设总面积70公顷的首钢滨水公园--首钢工业遗址公园。<br>
+                            2018年1月，入选第一批中国工业遗产保护名录。<br>
+                首钢园是北京唯一百年历史的超大型工厂遗址，带有浓浓的废土朋克风格，像沉沉睡去的钢铁巨兽。
+                <div style="color:#18d26e;">地址:</div>
+                北京市石景山永定河莲石湖<br>
+                <div style="color:#18d26e;">开放时间：</div>
+                全天08:00-17:00
+                <div style="color:#18d26e;">建议游览时间:</div>4-5小时
+                <div style="color:#18d26e;">门票:</div>
+                免费
+                <div style="color:#18d26e;">周边游览:</div>
+                周边景点：首钢园的南部，穿过永定河，便是值得一看的北京园博园，可以选择在同一天进行参观。
+                </p>
+                </div>
+              </div>
+                </div>
+                </div>
+                </div>
+
+
+
+                </div>
+                </section>
+                </div>
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-sm-12 footer-info">
+            <h3>旅图 TravelMap</h3>
+            <p>行旅在途，只需此图：一目了然的旅游地图<br><br>
+              在这里，您可以快速查看各个城市的旅游景点位置，为您制作旅游计划带来更高效的帮助。您还可以和社区里的旅游达人互动，为自己的旅游行程增添更多乐趣。欢迎在这里记录您的个人游记，分享给志同道合的朋友们！</p>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 footer-links">
+            <h4>看看其他</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="https://joyjiang0206.github.io/TravelMap/index.html">主页</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="https://joyjiang0206.github.io/TravelMap/city-map.html">城市</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="https://joyjiang0206.github.io/TravelMap/travel/shequ.html">社区</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="https://joyjiang0206.github.io/TravelMap/p/personal.html">个人</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 footer-contact">
+            <h4>联系我们</h4>
+            <p>
+              <strong>中国传媒大学广告学院</strong> <br>
+               樊陆佳  蒋仪澄  姜羽婷  潘跃<br>
+               阮一冉  王雪彤  王维<br>
+              <strong>Email:</strong> ggxystu@cuc.edu.cn<br>
+              <strong>Address:</strong> 北京市朝阳区定福庄东街1号中国传媒大学45号楼<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Map -->
+  <script>
+  var mymap = L.map('mapid').setView([39.9,116.4], 10);
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1
+  }).addTo(mymap);
+  </script>
+
+</body>
+
+</html>

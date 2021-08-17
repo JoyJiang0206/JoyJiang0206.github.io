@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>キセキの世代</title>
+	<link rel="icon" href="img\icon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="img\icon.jpg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="https://baike.baidu.com/item/%E9%BB%91%E5%AD%90%E7%9A%84%E7%AF%AE%E7%90%83/26460?fr=aladdin" data-toggle="tooltip" data-placement="top" title="百度百科" target="_blank"><img src="img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+						<li class="nav-item">
+							<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Story</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="encounter.html">Encounter</a>
+								<a class="dropdown-item" href=e"friendship.html">Friendship</a>
+								<a class="dropdown-item" href="breakoff.html">Break off</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="more.html">More</a>
+							</div>
+						</li>
+							<a class="nav-link" href="member.html">Member</a>
+               </li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+
+            <!--- DEMO -->
+            <div class="text" style=" text-align:center;">
+           <img src="img\03.gif" width="700" style="margin-top:100px;">
+
+            <div id="main" class="">
+            <input type="button" id="btn" onclick="open_video()" value="Play">
+            <a href="index.html" class="btn btn-light" style="width:100px;height:40px;font-size:20px;" role="button" aria-pressed="true">Back</a>
+            </div>
+
+            <div id="vido" class="">
+    <video width="888" controls>
+         <source src="img\HOME.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<style type="text/css">
+#btn{ width:100px;height:40px; font-size:20px;border-radius:10px;
+ background:skyblue;margin-top:100px; }
+#main{ width:1110px;height:175px; margin:0 auto;}
+#vido{ border:1px;
+ position:absolute;left:280px; top:110px;
+}
+</style>
+
+<script>
+window.onload=function non(){
+document.getElementById("vido").style.cssText = "display:none;";
+}
+function open_video(){
+document.getElementById("vido").style.cssText = "display:block;";
+}
+</script>
+            <!--- Footer -->
+            <footer>
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <div class="col-12">
+                    <hr class="color-F00">
+                    <h5>&copy; Shueisha Inc.</h5>
+                  </div>
+                </div>
+              </div>
+            </footer>
+</body>
+</html>
