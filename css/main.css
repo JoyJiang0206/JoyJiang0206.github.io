@@ -1244,7 +1244,7 @@ input::-moz-focus-inner {
 .section-intro h3 {
 	font-family: "montserrat-bold", sans-serif;
 	font-size: 2rem;
-	color: #4C2405;
+	color: #FFC107;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 	margin-bottom: 0;
@@ -1932,7 +1932,7 @@ header .header-logo a {
 #about h3 {
 	font-family: "montserrat-bold", sans-serif;
 	font-size: 1.6rem;
-	color: #212121;
+	color: #FFC107;
 	text-transform: uppercase;
 	letter-spacing: .15rem;
 	margin: 0 0 0 .3rem;
@@ -2221,7 +2221,7 @@ header .header-logo a {
 
 #skills .section-intro h3 {
 	color: rgba(255, 255, 255, 0.35);
-	color: #FFFFFF;
+	color: #FFC107;
 }
 
 #skills .section-intro h1 {
@@ -2790,7 +2790,7 @@ header .header-logo a {
 }
 
 #contact .section-intro h3 {
-	color: #7c3b08;
+	color: #FFC107;
 }
 
 #contact .section-intro p.lead {
@@ -2855,7 +2855,7 @@ header .header-logo a {
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #4C2405;
+	background: #FFC107;
 }
 
 #contact form .form-field label::after {
@@ -2865,7 +2865,7 @@ header .header-logo a {
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #4C2405;
+	border-right: 5px solid #FFC107;
 	content: "";
 }
 
@@ -2890,7 +2890,7 @@ header .header-logo a {
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #4C2405;
+	border-color: #FFC107;
 	color: #FFFFFF;
 }
 
@@ -2900,7 +2900,7 @@ header .header-logo a {
 }
 
 #contact textarea:focus {
-	border-color: #4C2405;
+	border-color: #FFC107;
 	color: #FFFFFF;
 }
 
@@ -2913,13 +2913,13 @@ header .header-logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #7c3b08;
+	background: #FFA000;
 	color: #FFFFFF;
 }
 
 #contact button.submitform:hover,
 #contact button.submitform:focus {
-	background: #4C2405;
+	background: #FFC107;
 }
 
 #message-warning,
